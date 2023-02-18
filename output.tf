@@ -1,4 +1,4 @@
-output "public_ip" {
-    value       = aws_instance.instance_ec2.public_ip
-    description = "Public IP of the web server"
+output "public_dns_domain" {
+    value       = aws_lb.instance_alb.dns_name
+    description = "DNS name of deployment load balancer"
 }
